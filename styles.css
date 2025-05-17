@@ -1,0 +1,379 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #111;
+    padding: 15px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: 30px;
+    flex-wrap: wrap;
+}
+
+.nav-links li {
+    margin: 5px 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #4fa3d1;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    position: relative;
+    margin: 20px auto;
+    background: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide .item {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.name {
+    font-size: 24px; 
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+.nav-buttons {
+    position: absolute;
+    right: 20px;
+    gap: 10px;
+}
+
+.button {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.button button {
+    width: 40px;
+    height: 35px;
+    margin-top: 30px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+
+
+.header {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.title {
+    color: hsl(251, 77%, 51%);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-item:hover {
+    background: rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.product-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.product-item a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.product-item p {
+    color: gray;
+    margin: 5px 0;
+}
+
+.product-item a:hover {
+    color: blue;
+}
+.cards-section {
+    display: flex;
+    justify-content: center;
+}
+
+.image-list:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-list {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-list img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+.info {
+    padding: 15px;
+    text-align: center;
+}
+
+.info p {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #0056b3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button button:hover {
+    background: #ff6600;
+    color: white;
+    transform: scale(1.1);
+}
+
+.footer {
+    background: #1a1a1a; 
+    color: #ffffff; 
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer h2, 
+.footer h3, 
+.footer h4 {
+    color: #f8f8f8; 
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li a {
+    color: #f0f0f0; 
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer ul li a:hover {
+    color: #0099ff; 
+}
+
+.footer .social-icons a {
+    color: #ffffff; 
+    font-size: 16px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.footer .social-icons a:hover {
+    color: #0099ff; 
+}
+
+
+.footer p {
+    font-size: 16px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+    text-align: left;
+    max-width: 1000px;
+    margin: 40px auto 0;
+}
+
+.footer-bottom .legal-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .slide .item {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    .name {
+        font-size: 18px;
+        padding: 8px;
+        max-width: 90%;
+    }
+    }
+    .footer-links {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .slide {
+        display: flex;
+        width: 100%;
+        height: 100vh; 
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .slide .item {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+   .slide .item img {
+    width: 100%;
+    height: auto; 
+    max-height: 100%;
+    object-fit: scale-down; 
+}
+
+@media screen and (max-width: 768px) {
+    .slide {
+        height: 50vh; 
+    }
+    .nav-links {
+        flex-direction: column;
+    }
+    .button button {
+        width: 35px;
+        height: 30px;
+    }
+    .footer-links {
+        grid-template-columns: 1fr;
+    }
+    .slide .item img {
+        height: 50vh;
+    }
+}
+
